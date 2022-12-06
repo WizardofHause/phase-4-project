@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import LogIn from './components/LogIn'
 import './App.css'
 
 function App() {
@@ -36,7 +37,7 @@ function App() {
 
   return (
     <>
-      <Login updateUser={updateUser} />
+      <LogIn updateUser={updateUser} />
       <div>{currentUser}</div>
       <div>{places}</div>
     </>
