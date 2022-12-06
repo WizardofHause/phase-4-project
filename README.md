@@ -1,24 +1,13 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Colorado Ready!
 
-Things you may want to cover:
+* When I navigate to the main landing page I can see Colorado attractions and user comments about those attractions.
 
-* Ruby version
+* As a user I can signup to create a new profile.
 
-* System dependencies
+* As a user I can login to a session with a secure password and stay logged in via user ID in the session hash, and log out of the site.
 
-* Configuration
+* As a user I can add attractions.  As the creator of an attraction, I can edit the attraction.
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* As a user I can add comments and edit or delete my own comments.
