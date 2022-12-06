@@ -1,7 +1,7 @@
 class UsersController < ApplicationController
     skip_before_action :authorized_user, only: [:create]
 
-    # SHOWS USER-SPECIFIC CONTENT
+    # 
     def show
         render json: current_user, status: :ok
     end
