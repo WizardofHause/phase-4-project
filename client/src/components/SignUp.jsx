@@ -26,14 +26,14 @@ function SignUp({ updateUser }) {
             },
             body: JSON.stringify(user)
         })
-            .then((r) => {
-                if (r.ok) {
-                    r.json().then(user => {
+            .then((res) => {
+                if (res.ok) {
+                    res.json().then(user => {
                         updateUser(user)
                         //navigate(`/users/${user.id}`)
                     })
                 } else {
-                    r.json().then(json => setErrors(Object.entries(json.errors)))
+                    res.json().then(json => setErrors(Object.entries(json.errors)))
                 }
             })
     }

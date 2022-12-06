@@ -9,9 +9,9 @@ function App() {
 
   useEffect(() => {
     fetch('/authorized_user')
-      .then((r) => {
-        if (r.ok) {
-          r.json()
+      .then((res) => {
+        if (res.ok) {
+          res.json()
             .then((user) => {
               updateUser(user);
               fetchPlaces()
@@ -22,11 +22,11 @@ function App() {
 
   const fetchPlaces = () => {
     fetch('/places')
-      .then((r) => {
-        if (r.ok) {
-          r.json().then(setPlaces)
+      .then((res) => {
+        if (res.ok) {
+          res.json().then(setPlaces)
         } else {
-          r.json().then(data => setErrors(data.error))
+          res.json().then(data => setErrors(data.error))
         }
       })
   }
